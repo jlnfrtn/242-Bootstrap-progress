@@ -1,0 +1,140 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>242 Yellow Pages</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+  </head>
+    <div id="homepage-header-background"></div>
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark  fixed-top" >
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse active" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown active">
+            <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">242 Yellow Pages</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="#">Bahamian Blogs</a>
+              <a class="dropdown-item" href="#">Bahamian Events</a>
+              <a class="dropdown-item" href="#">Bahamian Made Apps</a>
+              <a class="dropdown-item" href="#">Job Listings</a>
+              <a class="dropdown-item" href="#">Movie Times</a>
+              <a class="dropdown-item" href="#">Bahamian TV Guide</a>
+              <a class="dropdown-item" href="#">Movie Downloader</a>
+              <a class="dropdown-item" href="#">Online Shopping</a>
+              <a class="dropdown-item" href="#">Real Estate Listings</a>
+              <a class="dropdown-item" href="html/restaurant.html">Restaurant Menus</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="html/profile.html">Profile</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="html/lottery_numbers.html">Lottery Numbers</a>
+          </li>
+         <li class="nav-item active">
+            <a class="nav-link" href="html/streaming.html">Streaming</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="html/news.html">News</a>
+          </li>
+         <li class="nav-item active">
+            <a class="nav-link" href="html/weather.html">Weather</a>
+          </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="html/faq.html">FAQ</a>
+          </li>
+        <li class="nav-item active">
+            <a class="nav-link" href="html/about.html">About Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+        <!--HOME-PAGE-VIDEO-HTML-->
+   <div class="video-background">
+    <div class="video-foreground">
+      <div id="muteYouTubeVideoPlayer"></div>
+    </div>
+  </div>
+
+<script async src="https://www.youtube.com/iframe_api"></script>
+<script>
+ function onYouTubeIframeAPIReady() {
+  var player;
+  player = new YT.Player('muteYouTubeVideoPlayer', {
+    videoId: 'DGIXT7ce3vQ', // YouTube Video ID
+    width: 560,               // Player width (in px)
+    height: 316,              // Player height (in px)
+    playerVars: {
+      autoplay: 1,        // Auto-play the video on load
+      controls: 0,        // Show pause/play buttons in player
+      showinfo: 0,        // Hide the video title
+      modestbranding: 1,  // Hide the Youtube Logo
+      loop: 1,            // Run the video in a loop
+      fs: 0,              // Hide the full screen button
+      cc_load_policy: 0, // Hide closed captions
+      iv_load_policy: 3,  // Hide the Video Annotations
+      autohide: 1         // Hide video controls when playing
+    },
+    events: {
+      onReady: function(e) {
+        e.target.mute();
+      }
+    }
+  });
+ }
+
+ // Written by @labnol 
+</script>
+
+<div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+            <div class="homepage-search-bar">
+            <a href="/"><img src="img/Book_Logo.png" class="search-engine-logo" href="/"></a>
+            <input id="search-bar-advance" type="text" class="form-control" placeholder="Search The Bahamas">
+            <button id="242button-search" type="button" class="btn btn-warning" class="col-md-8">Search</button>
+            <button id="242button-locate-me" type="button" class="btn btn-warning" class="col-md-8">Locate Me</button>
+            </div>        
+    </div>
+    <div class="col-md-2">
+    </div>
+    
+</div>
+    <script>
+        var vid = iframe.getElementById("video");
+        vid.muted=true;
+    </script>
+        <!--HOME-PAGE-VIDEO-HTML-->
+    </main><!-- /.container -->
+      <footer>
+      <div class="homepage_footer">
+      <p id="tecknocure_name">POWERED BY TECKNOCURE</p>
+        </div>
+      </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
